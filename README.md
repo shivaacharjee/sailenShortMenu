@@ -6,8 +6,13 @@
 
 **License:** MIT  
 
-WordPress Plugin: Use Shortcode to display Menu List
+WordPress Extensible Plugin: Use Shortcode to display Menu List
 
+
+###Hook###
+add_filter( 'ssmSavpfilter_style', 'example_callback' );
+
+Manupulate the Contents
 
 
 ### Display ###
