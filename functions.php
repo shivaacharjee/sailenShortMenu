@@ -37,25 +37,19 @@ if (!class_exists('ssmSavp')) {
 
 	class ssmSavp{
 		
-
-
-		function __construct(){
-
-        	add_shortcode('menu', array($this,'ssmSavpDisplaySc'));        	
-        }
-
-
-		/**
-		 *
-		 * @var	string The current version
-		 */
-		public $version = "1.0";
-
 		/**
 		 *
 		 * @var string A unique string prefix  for properties  to avoid conflict
 		 */
-		public $prefix = 'ssmSavp_';
+		private $prefix = 'ssmSavp_';
+
+		function __construct(){
+
+        	add_shortcode('menu', array($this,'ssmSavpDisplaySc')); 
+        	//apply_filters( 'ssmSavpfilter_style', $atts, $menu_class);
+        	
+
+        }
 
 
 		/**
@@ -66,11 +60,12 @@ if (!class_exists('ssmSavp')) {
 
 		/**
 		 * @param array $atts 
-		 * @return HTML ENTITIES
+		 * @return HTML ENTITIES filter applied 
 		 */
-		function ssmSavpDisplaySc($atts) {
+		function ssmSavpDisplaySc($atts, $menu_class='ssmSavp_menu') {
 			
-			return wp_nav_menu( array( 'menu' => $atts['name'], 'menu_class'=>$this->prefix.'menu','echo' => false ) );
+
+			return apply_filters('ssmSavpfilter_style',wp_nav_menu( array( 'menu' => $atts['name'], 'menu_class'=>$menu_class,'echo' => false )));
 		}
 
 
@@ -85,5 +80,6 @@ if (!class_exists('ssmSavp')) {
  
 
 	//initiate class
+	
 	$ssmSavpObj=new ssmSavp();
-	 
+	
