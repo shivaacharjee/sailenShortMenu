@@ -55,7 +55,7 @@ if (!class_exists('ssmSavp')) {
 		 *
 		 * @var string A unique string prefix  for properties  to avoid conflict
 		 */
-		public $prefix = 'yawp_wim';
+		public $prefix = 'ssmSavp_';
 
 
 		/**
@@ -70,7 +70,7 @@ if (!class_exists('ssmSavp')) {
 		 */
 		function ssmSavpDisplaySc($atts) {
 			
-			return wp_nav_menu( array( 'menu' => $atts['name'], 'echo' => false ) );
+			return wp_nav_menu( array( 'menu' => $atts['name'], 'menu_class'=>$this->prefix.'menu','echo' => false ) );
 		}
 
 
