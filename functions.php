@@ -46,8 +46,7 @@ if (!class_exists('ssmSavp')) {
 		function __construct(){
 
         	add_shortcode('menu', array($this,'ssmSavpDisplaySc')); 
-        	//apply_filters( 'ssmSavpfilter_style', $atts, $menu_class);
-        	
+        	  
 
         }
 
@@ -68,9 +67,7 @@ if (!class_exists('ssmSavp')) {
 			return apply_filters('ssmSavpfilter_style',wp_nav_menu( array( 'menu' => $atts['name'], 'menu_class'=>$menu_class,'echo' => false )));
 		}
 
-
-
-		 
+ 
 
 
 	}
