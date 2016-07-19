@@ -31,18 +31,59 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 
-function ssm_outls($attributes) {    
-    var_dump($attributes['name'].'1');
-    return wp_nav_menu( array( 'menu' => $attributes['name'],'menu_class'=>'ssm_style' ,'echo' => false ) );
+
+
+if (!class_exists('ssmSavp')) {
+
+	class ssmSavp{
+		
+
+
+		function __construct(){
+
+        	add_shortcode('menu', array($this,'ssmSavpDisplaySc'));        	
+        }
+
+
+		/**
+		 *
+		 * @var	string The current version
+		 */
+		public $version = "1.0";
+
+		/**
+		 *
+		 * @var string A unique string prefix  for properties  to avoid conflict
+		 */
+		public $prefix = 'yawp_wim';
+
+
+		/**
+		 *
+		 * @var string A unique string prefix  for properties  to avoid conflict
+		 */
+
+
+		/**
+		 * @param array $atts 
+		 * @return HTML ENTITIES
+		 */
+		function ssmSavpDisplaySc($atts) {
+			
+			return wp_nav_menu( array( 'menu' => $atts['name'], 'echo' => false ) );
+		}
+
+
+
+		 
+
+
+	}
+
+
 }
-add_shortcode('ssm', 'ssm_outls');
-?>
+ 
 
-<style type="text/css">
-.ssm_style{
-
-	color:#F44336  !important;
-
-}
-
-</style>
+	//initiate class
+	$ssmSavpObj=new ssmSavp();
+	 
