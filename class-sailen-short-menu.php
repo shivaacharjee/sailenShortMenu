@@ -27,12 +27,17 @@
 		 * @return HTML ENTITIES filter applied 
 		 */
 		function ssmSavpDisplaySc($atts) {			
-			$def=$atts['class']; 
+			$def=$atts['class']; //ul class
+			$con=$atts['con'];//Container class
 			if(!isset($atts['class']) || strlen(trim($atts['class']))<=0 ){
 				$def='sailen_short_menu'; //default class to plugin namesapce
 			}
 
-			return apply_filters('ssmSavpfilter_style',wp_nav_menu( array('menu' => $atts['name'], 'menu_class'=> $def,'echo' => false )));
+			if(!isset($atts['con']) || strlen(trim($atts['con']))<=0 ){
+				$con='sailen_short_menu_con'; //default class to plugin namesapce
+			}
+
+			return apply_filters('ssmSavpfilter_style',wp_nav_menu( array('menu' => $atts['name'], 'menu_class'=> $def,'echo' => false, 'container_class'=>$con )));
 		}
 
 
