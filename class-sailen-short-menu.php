@@ -6,7 +6,9 @@
 		 *
 		 * @var string A unique string prefix  for properties  to avoid conflict
 		 */
-		public $prefix = 'ssmSavp_';
+		private $prefix = 'ssmSavp_';
+		private $menu_identifier='';
+
 
 		function __construct(){
 
@@ -46,6 +48,9 @@
 				$depth=0; //default depth=0
 			}
 
+			$this->menu_identifier= $atts['name'];
+			$this->ssmSavpReturnMenuItemInfo();
+
 			return apply_filters('ssmSavpfilter_style',wp_nav_menu( array('menu' => $atts['name'], 
 								'menu_class'=> $def,
 								'echo' => false,
@@ -56,7 +61,24 @@
 
 
 
-		 
+		/**
+		 * @return Array  
+		 */
+
+			function ssmSavpReturnMenuItemInfo(){
+									 
+					$ssmRetArr=array();
+					$ssmSavpArrMenu= wp_get_nav_menu_items( $this->menu_identifier, array( 'order' => 'DESC' ));
+					$ssmSavpArrMenu=json_decode(json_encode($ssmSavpArrMenu),TRUE);
+					
+					foreach ($ssmSavpArrMenu as $arrTemp) {
+					    array_push($ssmRetArr,$arrTemp['title']);
+					}
+					
+					return apply_filters('ssmSavpMenuArray',$ssmRetArr);
+				
+
+			}			 
  
 
 
