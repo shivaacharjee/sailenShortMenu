@@ -27,9 +27,11 @@
 		 * @return HTML ENTITIES filter applied 
 		 */
 		function ssmSavpDisplaySc($atts) {			
-			$def=$atts['class']; //ul class
-			$con=$atts['con'];//Container class
-			$depth=$atts['depth'];//
+			$def=esc_attr($atts['class']); //ul class
+			$con=esc_attr($atts['con']);//Container class
+			$depth=esc_attr($atts['depth']);//
+			 
+
 			if(!isset($atts['class']) || strlen(trim($atts['class']))<=0 ){
 				$def='sailen_short_menu'; //default class to plugin namesapce
 			}
