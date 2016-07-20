@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: SailenShortMenu
+Plugin Name: Sailen Short Menu
 Plugin URI: https://github.com/shivaacharjee/sailenShortMenu
 Author: Shiva Acharjee
 Author URI: https://www.shivaacharjee.com
@@ -30,53 +30,8 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
+require_once(plugin_dir_path( __FILE__ ).'class-sailen-short-menu.php');
 
-
-
-if (!class_exists('ssmSavp')) {
-
-	class ssmSavp{
-		
-		/**
-		 *
-		 * @var string A unique string prefix  for properties  to avoid conflict
-		 */
-		private $prefix = 'ssmSavp_';
-
-		function __construct(){
-
-        	add_shortcode('menu', array($this,'ssmSavpDisplaySc')); 
-        	  
-
-        }
-
-
-		/**
-		 *
-		 * @var string A unique string prefix  for properties  to avoid conflict
-		 */
-
-
-		/**
-		 * @param array $atts 
-		 * @return HTML ENTITIES filter applied 
-		 */
-		function ssmSavpDisplaySc($atts, $menu_class='ssmSavp_menu') {
-			
-
-			return apply_filters('ssmSavpfilter_style',wp_nav_menu( array( 'menu' => $atts['name'], 'menu_class'=>$menu_class,'echo' => false )));
-		}
-
- 
-
-
-	}
-
-
-}
- 
-
-	//initiate class
+@$ssmSavpObj=new Sailen_Short_Menu();
 	
-	$ssmSavpObj=new ssmSavp();
-	
+
