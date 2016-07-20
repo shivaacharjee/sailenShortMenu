@@ -29,6 +29,7 @@
 		function ssmSavpDisplaySc($atts) {			
 			$def=$atts['class']; //ul class
 			$con=$atts['con'];//Container class
+			$depth=$atts['depth'];//
 			if(!isset($atts['class']) || strlen(trim($atts['class']))<=0 ){
 				$def='sailen_short_menu'; //default class to plugin namesapce
 			}
@@ -37,7 +38,16 @@
 				$con='sailen_short_menu_con'; //default class to plugin namesapce
 			}
 
-			return apply_filters('ssmSavpfilter_style',wp_nav_menu( array('menu' => $atts['name'], 'menu_class'=> $def,'echo' => false, 'container_class'=>$con )));
+			if(!isset($atts['depth']) || strlen(trim($atts['depth']))<=0 ){
+				$depth=0; //default depth=0
+			}
+
+			return apply_filters('ssmSavpfilter_style',wp_nav_menu( array('menu' => $atts['name'], 
+								'menu_class'=> $def,
+								'echo' => false,
+								'container_class'=>$con,
+								'depth'=>$depth )
+			));
 		}
 
 
