@@ -26,12 +26,18 @@
 		 * @param array $atts 
 		 * @return HTML ENTITIES filter applied 
 		 */
-		function ssmSavpDisplaySc($atts, $menu_class='ssmSavp_menu') {
-			
+		function ssmSavpDisplaySc($atts) {			
+			$def=$atts['class']; 
+			if(!isset($atts['class']) || strlen(trim($atts['class']))<=0 ){
+				$def='sailen_short_menu'; //default class to plugin namesapce
+			}
 
-			return apply_filters('ssmSavpfilter_style',wp_nav_menu( array( 'menu' => $atts['name'], 'menu_class'=>$menu_class,'echo' => false )));
+			return apply_filters('ssmSavpfilter_style',wp_nav_menu( array('menu' => $atts['name'], 'menu_class'=> $def,'echo' => false )));
 		}
 
+
+
+		 
  
 
 
