@@ -51,7 +51,7 @@
 			$this->menu_identifier= $atts['name'];
 			$this->ssmSavpReturnMenuItemInfo();
 
-			return apply_filters('ssmSavpfilter_style',wp_nav_menu( array('menu' => $atts['name'], 
+			return apply_filters('ssmSavpfilter_html',wp_nav_menu( array('menu' => $atts['name'], 
 								'menu_class'=> $def,
 								'echo' => false,
 								'container_class'=>$con,
