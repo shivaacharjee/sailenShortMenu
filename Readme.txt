@@ -9,12 +9,29 @@ Use Shortcode to display Menu List
 
 == Description ==
 
-Display Menu List using Shortcode via menu name
+Display Menu List using Shortcode via menu-name
 
+=Using Shortcode=
+[menu name="YOUR_MENU_NAME" class="CLASS_FOR_UL_TAG" con="CLASS_FOR_THE_CONTAINER" depth="LEVEL" ]
+
+* YOUR_MENU_NAME [Name of the Menu created by you][Required]
+
+* CLASS_FOR_UL_TAG [If yu want to provide a different class for the Ul tag. Default is assigned] [Optional]
+
+* CLASS_FOR_THE_CONTAINER [If yu want to provide a different class for the container for Ul tag. Default is assigned] [Optional]
+
+* LEVEL [Numeric value to define the level of hierarchy of the MenuItems. Default is 0] [Optional]
+
+=Using Filters=
+
+Sailen Short Menu provide two filters
+
+* 'ssmSavpfilter_html' [Return HTML conetent for the Menu]
+
+* 'ssmSavpMenuArray' [Return Array of menu list]
 
 
 == Installation ==
-
  
 
 1. Upload the plugin files to the `/wp-content/plugins/sailenseo` directory, or install the plugin through the WordPress plugins screen directly.
