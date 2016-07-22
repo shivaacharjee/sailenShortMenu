@@ -22,6 +22,8 @@ WordPress Extensible Plugin: Use Shortcode to display Menu List
 
  <li>LEVEL [Numeric value to define the level of hierarchy of the MenuItems. Default is 0] [Optional]</li>
 </ol>
+
+<i>The Shortcode can also be included within the widget_text</i>
 ***Using Filters***
 
 <b>Sailen Short Menu provide two filters</b>
