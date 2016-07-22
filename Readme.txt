@@ -30,7 +30,7 @@ Sailen Short Menu provide two filters
 
 * 'ssmSavpMenuArray' [Return Array of menu list]
 
-
+* The Shortcode can also be included within the widget_text
 == Installation ==
  
 
