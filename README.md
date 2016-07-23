@@ -24,6 +24,7 @@ WordPress Extensible Plugin: Use Shortcode to display Menu List
 </ol>
 
 <i>The Shortcode can also be included within the widget_text</i>
+
 ***Using Filters***
 
 <b>Sailen Short Menu provide two filters</b>
