@@ -2,11 +2,7 @@
 
 	class Sailen_Short_Menu{
 		
-		/**
-		 *
-		 * @var string A unique string prefix  for properties  to avoid conflict
-		 */
-		private $prefix = 'ssmSavp_';
+
 		private $menu_identifier='';
 
 
@@ -20,11 +16,7 @@
         }
 
 
-		/**
-		 *
-		 * @var string A unique string prefix  for properties  to avoid conflict
-		 */
-
+		
 
 		/**
 		 * @param array $atts 
