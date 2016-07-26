@@ -1,17 +1,20 @@
 === Sailen Short Menu ===
-Contributors: shivaacharjee
+Tags: Shortcode, Menu, Widget 
+Contributors: shivaacharjee, saurabhshukla
 Requires at least: 3.7
 Tested up to: 4.5.2 
 License: MIT
+License URI: https://opensource.org/licenses/MIT
 
 
 Use Shortcode to display Menu List
 
 == Description ==
 
-Display Menu List using Shortcode via menu-name
+Extensible Plugin which display Menu List using Shortcode via menu-name within Content and Widgetized area. 
 
-=Using Shortcode=
+= Using Shortcode =
+
 [menu name="YOUR_MENU_NAME" class="CLASS_FOR_UL_TAG" con="CLASS_FOR_THE_CONTAINER" depth="LEVEL" ]
 
 * YOUR_MENU_NAME [Name of the Menu created by you][Required]
@@ -22,7 +25,7 @@ Display Menu List using Shortcode via menu-name
 
 * LEVEL [Numeric value to define the level of hierarchy of the MenuItems. Default is 0] [Optional]
 
-=Using Filters=
+= Using Filters =
 
 Sailen Short Menu provide two filters
 
@@ -52,7 +55,10 @@ The API enables plugin developers to create special kinds of content (e.g. forms
 
 == Screenshots ==
 
-1. Display
+== Contribute ==
+
+= Github =
+https://github.com/shivaacharjee/sailenShortMenu
 
 == Changelog ==
 
