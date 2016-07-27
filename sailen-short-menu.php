@@ -32,6 +32,6 @@ SOFTWARE.
 */
 require_once(plugin_dir_path( __FILE__ ).'class-sailen-short-menu.php');
  
-@$ssmSavpObj=new Sailen_Short_Menu();
+$ssmSavpObj=new Sailen_Short_Menu();
 	
 
