@@ -1,13 +1,13 @@
  
 # Sailen Short Menu  #
-**Contributors:** Shiva Acharjee
-
 **Author link:** https://www.shivaacharjee.com
 
 **License:** MIT  
 
-WordPress Extensible Plugin: Use Shortcode to display Menu List
 
+WordPress Extensible Plugin: Use Shortcode to display Menu List within content and widget area
+
+<a href='https://wordpress.org/plugins/sailen-short-menu/'>Click here to view this plugin on WordPress.org</a>
 
 **Using Shortcode**
 
