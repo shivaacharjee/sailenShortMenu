@@ -7,7 +7,7 @@
 
 WordPress Extensible Plugin: Use Shortcode to display Menu List within content and widget area
 
-<a href='https://wordpress.org/plugins/sailen-short-menu/'>Click here to view this plugin on WordPress.org</a>
+<a target='_blank' href='https://wordpress.org/plugins/sailen-short-menu/'>Click here to view this plugin on WordPress.org</a>
 
 **Using Shortcode**
 
