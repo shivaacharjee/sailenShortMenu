@@ -1,5 +1,6 @@
 === Sailen Short Menu ===
-Tags: Shortcode, Menu, Widget 
+Tags:  display menu in widget using shortcode, display menu using shortcodes in posts., shortcode, shortcode in widget, shortcode widget, Shortcodes In Widgets, use plugin shortcode in widget, Array of menu by name, widget. shortcode, Extensble plugin
+
 Contributors: shivaacharjee, saurabhshukla
 Requires at least: 3.7
 Tested up to: 4.5.2 
