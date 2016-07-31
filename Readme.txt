@@ -1,22 +1,22 @@
 === Sailen Short Menu ===
-Tags:  display menu in widget using shortcode, display menu using shortcodes in posts., shortcode, shortcode in widget, shortcode widget, Shortcodes In Widgets, use plugin shortcode in widget, Array of menu by name, widget. shortcode, Extensble plugin
+Tags:  display menu in widget using shortcode, display menu using shortcodes in posts., shortcode, shortcode in widget, shortcode widget, Shortcodes In Widgets, use plugin shortcode in widget, Array of menu by name, widget. shortcode
 
-Contributors: shivaacharjee, saurabhshukla
+Contributors: shivaacharjee
 Requires at least: 3.7
 Tested up to: 4.5.2 
 License: MIT
 License URI: https://opensource.org/licenses/MIT
 
 
-Use Shortcode to display Menu List within content and widget area
+Sailen Short Menu is a simple plugin which allow users to display nav-menus within post/pages and Sidebars using Shortcodes
 
 == Description ==
 
-Extensible Plugin which display Menu List using Shortcode via menu-name within Content and Widgetized area. 
+Extensible Plugin which display Menu List using Shortcode via menu-name within Content and sidebars. 
 
 = Using Shortcode =
 
-[menu name="YOUR_MENU_NAME" class="CLASS_FOR_UL_TAG" con="CLASS_FOR_THE_CONTAINER" depth="LEVEL" ]
+[ssm-menu name="YOUR_MENU_NAME" class="CLASS_FOR_UL_TAG" con="CLASS_FOR_THE_CONTAINER" depth="LEVEL" ]
 
 <u>The Shortcode can also be included within the Widget area and sidebars </u>
 
@@ -29,14 +29,6 @@ Extensible Plugin which display Menu List using Shortcode via menu-name within C
 * LEVEL [Numeric value to define the level of hierarchy of the MenuItems. Default is 0] [Optional]
 
  
-
-= Using Filters =
-
-Sailen Short Menu provide two filters
-
-* 'ssmSavpfilter_html' [Return HTML conetent for the Menu]
-
-* 'ssmSavpMenuArray' [Return Array of menu list]
 
 
 == Installation ==
@@ -62,6 +54,7 @@ The API enables plugin developers to create special kinds of content (e.g. forms
 
 1. Display within contents
 2. Using TextWidgets
+3. At sidebar
 
 == Contribute ==
 
