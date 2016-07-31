@@ -30,7 +30,7 @@ WordPress Plugin: Use Shortcode to display Menu List within content and widget a
 
 ### Display ###
 
-<img src="mages/screenshot-1.jpg"/>
+<img src="images/screenshot-1.jpg"/>
 
 ### Through FTP ###
 1. Extract the downloaded file. 
