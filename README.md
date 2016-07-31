@@ -5,7 +5,7 @@
 **License:** MIT  
 
 
-WordPress Extensible Plugin: Use Shortcode to display Menu List within content and widget area
+WordPress Plugin: Use Shortcode to display Menu List within content and widget area
 
 <a target='_blank' href='https://wordpress.org/plugins/sailen-short-menu/'>Click here to view this plugin on WordPress.org</a>
 
@@ -24,25 +24,13 @@ WordPress Extensible Plugin: Use Shortcode to display Menu List within content a
 </ol>
 
 <i>The Shortcode can also be included within the widget_text</i>
+<img src='images/screenshot-2.jpg'traget='_blank'/>
 
-***Using Filters***
-
-<b>Sailen Short Menu provide two filters</b>
-
-<ol>
-<li>
- 'ssmSavpfilter_html' [Return HTML conetent for the Menu]
-</li>
-
-<li>
- 'ssmSavpMenuArray' [Return Array of menu list]
-</li>
-</ol>
 
 
 ### Display ###
 
-<img src="Screenshot-1.jpg"/>
+<img src="mages/screenshot-1.jpg"/>
 
 ### Through FTP ###
 1. Extract the downloaded file. 
