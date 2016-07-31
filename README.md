@@ -11,7 +11,7 @@ WordPress Plugin: Use Shortcode to display Menu List within content and widget a
 
 **Using Shortcode**
 
-<i>[menu name="YOUR_MENU_NAME" class="CLASS_FOR_UL_TAG" con="CLASS_FOR_THE_CONTAINER" depth="LEVEL" ]</i>
+<i>[ssm-menu name="YOUR_MENU_NAME" class="CLASS_FOR_UL_TAG" con="CLASS_FOR_THE_CONTAINER" depth="LEVEL" ]</i>
 
 <ol>
  <li>YOUR_MENU_NAME</> [Name of the Menu created by you][Required]</li>
