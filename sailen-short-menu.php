@@ -1,10 +1,15 @@
 <?php
+
+/**
+ * @package Sailen Short Menu
+ */
 /*
 Plugin Name: Sailen Short Menu
 Plugin URI: https://github.com/shivaacharjee/sailenShortMenu
 Author: Shiva Acharjee
 Author URI: https://www.shivaacharjee.com
-Description: Nav Menu and Shortcode
+Description: <strong>Sailen Short Menu</strong> is a simple plugin 
+which allow users to display nav-menus within post/pages and Sidebars using Shortcodes
 Version: 1.0
 License: MIT
 */
@@ -30,8 +35,13 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
-require_once(plugin_dir_path( __FILE__ ).'class-sailen-short-menu.php');
- 
-$ssmSavpObj=new Sailen_Short_Menu();
-	
 
+//Checks if the class has been defined
+if (!class_exists('Ssm_Sailen_Short_Menu')) {
+
+	// File 'class-ssm-sailen-short-menu.php' included 
+	include_once (plugin_dir_path( __FILE__ ).'class-ssm-sailen-short-menu.php');
+
+	//class 'Ssm_Sailen_Short_Menu' initated with __construct
+	new Ssm_Sailen_Short_Menu();	
+}
