@@ -8,7 +8,7 @@
 
 
 WordPress Plugin:  <strong>Sailen Short Menu</strong> is a simple plugin which allow users to display nav-menus within post/pages and Sidebars using Shortcodes
-<a target='_blank' href='https://wordpress.org/plugins/sailen-short-menu/'>Click here to view this plugin on WordPress.org</a>
+<a target='_blank' href='https://wordpress.org/plugins/sailen-short-menu/' target='_blank'>Click here to view this plugin on WordPress.org</a>
 
 **Using Shortcode**
 
