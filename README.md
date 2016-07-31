@@ -24,13 +24,16 @@ WordPress Plugin: Use Shortcode to display Menu List within content and widget a
 </ol>
 
 <i>The Shortcode can also be included within the widget_text</i>
-<img src='images/screenshot-2.jpg'traget='_blank'/>
+
+<img src='images/screenshot-2.jpg' traget='_blank'/>
 
 
 
 ### Display ###
 
-<img src="images/screenshot-1.jpg"/>
+<img src="images/screenshot-1.jpg" traget='_blank'/>
+
+<img src="images/screenshot-3.jpg" traget='_blank'/>
 
 ### Through FTP ###
 1. Extract the downloaded file. 
