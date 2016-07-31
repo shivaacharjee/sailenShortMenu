@@ -67,7 +67,7 @@
 								'echo' => false,
 								'container_class'=>$ul_container,
 								'depth'=>$depth 
-								)
+							)
 			);				
 		}
 
