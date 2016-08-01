@@ -1,6 +1,6 @@
 === Sailen Short Menu ===
-Tags:  display menu in widget using shortcode, display menu using shortcodes in posts., shortcode, shortcode in widget, shortcode widget, Shortcodes In Widgets, use plugin shortcode in widget, Array of menu by name, widget. shortcode
-
+Tags:  display menu in widget using shortcode, display menu using shortcodes in posts., shortcode, shortcode in widget, shortcode widget, Shortcodes In Widgets, use plugin shortcode in widget, menu by name, widget. shortcode
+stable tag: trunk
 Contributors: shivaacharjee
 Requires at least: 3.7
 Tested up to: 4.5.2 
@@ -12,7 +12,7 @@ Sailen Short Menu is a simple plugin which allow users to display nav-menus with
 
 == Description ==
 
-Extensible Plugin which display Menu List using Shortcode via menu-name within Content and sidebars. 
+Sailen Short Menu is a simple plugin which allow users to display nav-menus within post/pages and Sidebars using Shortcodes
 
 = Using Shortcode =
 
