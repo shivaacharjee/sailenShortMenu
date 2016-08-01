@@ -34,6 +34,7 @@ WordPress Plugin:  <strong>Sailen Short Menu</strong> is a simple plugin which a
 
 <img src="images/screenshot-1.jpg" traget='_blank'/>
 
+<i>At sidebar</>
 <img src="images/screenshot-3.jpg" traget='_blank'/>
 
 ### Installation ###
