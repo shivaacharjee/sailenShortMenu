@@ -67,7 +67,7 @@
 			}
 
 			//calling wp_nav_menu with supplied parameters 	
-			return wp_nav_menu( 
+			return wp_nav_menu ( 
 
 						array (
 								'menu' => $param['name'], 
