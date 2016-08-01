@@ -8,8 +8,7 @@ Plugin Name: Sailen Short Menu
 Plugin URI: https://github.com/shivaacharjee/sailenShortMenu
 Author: Shiva Acharjee
 Author URI: https://www.shivaacharjee.com
-Description: <strong>Sailen Short Menu</strong> is a simple plugin 
-which allow users to display nav-menus within post/pages and Sidebars using Shortcodes
+Description: <strong>Sailen Short Menu</strong> is a simple plugin which allow users to display nav-menus within post/pages and Sidebars using Shortcodes
 Version: 1.0
 License: MIT
 */
