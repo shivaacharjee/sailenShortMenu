@@ -32,6 +32,7 @@
 			//if the shortcode belong to this plugin 
 			if (strpos($widget_text, 'ssm-menu') !== false) {
 
+				//executing and generating output for the given shortcode
 				 echo do_shortcode( esc_attr($widget_text) );
 			}				    
 			
