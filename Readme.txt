@@ -1,5 +1,5 @@
 === Sailen Short Menu ===
-Tags:  display menu in widget using shortcode, display menu using shortcodes in posts., shortcode, shortcode in widget, shortcode widget, Shortcodes In Widgets, use plugin shortcode in widget, menu by name, widget. shortcode
+Tags:  display menu in widget using shortcode, display menu using shortcodes in posts., shortcode, shortcode in widget, shortcode widget, Shortcodes In Widgets, use plugin shortcode in widget, menu by name, menu shortcode, display menu
 stable tag: trunk
 Contributors: shivaacharjee
 Requires at least: 3.7
