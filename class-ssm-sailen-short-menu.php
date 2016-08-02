@@ -22,8 +22,14 @@
 				add_filter('widget_text', array($this,'is_plugin_shortcode'));
 		}
 
+		/**
+		 * @param String $widget_text 
+		 * @return Shortcode content
+		 */
+
 		function is_plugin_shortcode($widget_text) {
 
+			//if the shortcode belong to this plugin 
 			if (strpos($widget_text, 'ssm-menu') !== false) {
 
 				 echo do_shortcode( esc_attr($widget_text) );
